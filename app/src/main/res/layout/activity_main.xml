@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/FunActivity"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/birthday"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ToMessage" />
+
+
+        <EditText
+            android:id="@+id/ToMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="To Message!!"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            android:textSize="@android:dimen/app_icon_size"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.53"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="From message"
+            app:layout_constraintBottom_toTopOf="@id/previewbtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="@android:dimen/app_icon_size"
+            android:gravity="right"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:padding="5dp"
+            app:layout_constraintVertical_bias="0.094" />
+        <Button
+            android:id="@+id/previewbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preview"
+            android:background="@drawable/button_background"
+            android:textColor="#ffffff"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColorHighlight="#0000ff"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp" />
+
+        <Button
+            android:id="@+id/changeBackgroundbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change background"
+            android:background="@drawable/button_background"
+            android:textColor="#ffffff"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColorHighlight="#0000ff"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
